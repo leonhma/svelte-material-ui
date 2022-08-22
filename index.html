@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Material UI Components for Svelte, ready to use in your app."
+    />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@SciActive" />
+    <meta name="twitter:creator" content="@SciActive" />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Svelte Material UI" />
+    <meta property="og:url" content="https://sveltematerialui.com/" />
+    <meta
+      property="og:image"
+      content="https://sveltematerialui.com/header.png"
+    />
+    <meta
+      property="og:description"
+      content="Material UI Components for Svelte, ready to use in your app."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts and CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+    />
+
+    <!-- Highlight.js Theme (For Markdown Pages) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/highlight.js@11.5.1/styles/obsidian.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    <meta http-equiv="content-security-policy" content=""><title>Svelte Material UI</title>
+    <link rel="stylesheet" href="/smui.css" media="(prefers-color-scheme: light)" class="svelte-nda62k" data-svelte="svelte-cujaw0">
+    <link rel="stylesheet" href="/smui-dark.css" media="screen and (prefers-color-scheme: dark)" class="svelte-nda62k" data-svelte="svelte-cujaw0">
+
+    
+    <link rel="stylesheet" href="/site.css" media="(prefers-color-scheme: light)" class="svelte-nda62k" data-svelte="svelte-cujaw0">
+    <link rel="stylesheet" href="/site-dark.css" media="screen and (prefers-color-scheme: dark)" class="svelte-nda62k" data-svelte="svelte-cujaw0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/itmatters@1.0.1/index.css" class="svelte-nda62k" data-svelte="svelte-cujaw0">
+	<link href="./_app/immutable/assets/+layout-9b7bd2ce.css" rel="stylesheet">
+	<link href="./_app/immutable/assets/+page-855dbed1.css" rel="stylesheet">
+	<link rel="modulepreload" href="./_app/immutable/start-7c2fd269.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/index-0280c2c9.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/singletons-53b422a2.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/index-e6d49891.js">
+	<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-adad394c.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/index-d8420db7.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/useActions-d72238ee.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/Ripple-3b49acfc.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/icons-7ce10349.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/TinyGesture-a8ba9ee8.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/stores-73f6ac17.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/index-44fc168d.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/index-d80d1894.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/focus-trap-b9633c61.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/IconButton-f355b8c9.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/index-9bfd9c52.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/index-f615c1f2.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/prefixFilter-4c6b67e2.js">
+	<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-d7e78a04.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/Subtitle-16833c9d.js">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-79MKYND6TX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-79MKYND6TX');
+    </script>
+  </head>
+  <body class="ukraine">
+    <div id="smui-app">
+
+
+
+
+
+
+
+
+<header class="demo-top-app-bar mdc-top-app-bar smui-top-app-bar--static" style=""><div class="mdc-top-app-bar__row"><section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <a href="/" class="mdc-theme--primary mdc-top-app-bar__title" style="">Svelte Material UI</a>
+</section>
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar" style="color: var(--mdc-on-surface, #000);">
+        <a href="https://discord.gg/aFzmkrmg9P" class="mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__action-item" style=""><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" class="svelte-nda62k"></path></svg></a>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-0"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">Join the Discord Server</div>
+</div>
+        <a href="https://twitter.com/SciActive" class="mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__action-item" style=""><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" class="svelte-nda62k"></path></svg></a>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-1"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">Hunter Perrin (SMUI Author) on Twitter</div>
+</div>
+        <a href="https://github.com/hperrin/svelte-material-ui" class="mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__action-item" style=""><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" class="svelte-nda62k"></path></svg></a>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-2"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">SMUI on GitHub</div>
+</div>
+        <button class="mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__action-item" style=""><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon mdc-icon-button__icon--on" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z" class="svelte-nda62k"></path></svg>
+            <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,2L14.39,5.42C13.65,5.15 12.84,5 12,5C11.16,5 10.35,5.15 9.61,5.42L12,2M3.34,7L7.5,6.65C6.9,7.16 6.36,7.78 5.94,8.5C5.5,9.24 5.25,10 5.11,10.79L3.34,7M3.36,17L5.12,13.23C5.26,14 5.53,14.78 5.95,15.5C6.37,16.24 6.91,16.86 7.5,17.37L3.36,17M20.65,7L18.88,10.79C18.74,10 18.47,9.23 18.05,8.5C17.63,7.78 17.1,7.15 16.5,6.64L20.65,7M20.64,17L16.5,17.36C17.09,16.85 17.62,16.22 18.04,15.5C18.46,14.77 18.73,14 18.87,13.21L20.64,17M12,22L9.59,18.56C10.33,18.83 11.14,19 12,19C12.82,19 13.63,18.83 14.37,18.56L12,22Z" class="svelte-nda62k"></path></svg></button>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-3"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">Lights on</div>
+</div>
+</section>
+</div>
+</header>
+  <div class="drawer-container svelte-nda62k"><aside class="demo-drawer mdc-theme--secondary-bg hide-initial-small mdc-drawer"><div class="mdc-drawer__content"><nav class="mdc-deprecated-list" role="list"><a href="/INSTALL.md" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Installation</span>
+              </a><a href="/SVELTEKIT.md" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">SvelteKit</span>
+              </a><a href="/THEMING.md" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Theming</span>
+              </a><a href="/MIGRATING.md" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Migrating</span>
+              </a><hr class="mdc-deprecated-list-divider" role="separator">
+<a href="/demo/accordion/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Accordion</span>
+              </a><a href="/demo/badge/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Badge</span>
+              </a><a href="/demo/banner/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Banner</span>
+              </a><span class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="" tabindex="-1"><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Action Buttons</span>
+              </span><a href="/demo/button/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Button</span>
+              </a><a href="/demo/fab/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Floating Action Button</span>
+              </a><a href="/demo/icon-button/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Icon Button</span>
+              </a><a href="/demo/card/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Cards</span>
+              </a><a href="/demo/common/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Common</span>
+              </a><a href="/demo/data-table/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Data Table</span>
+              </a><a href="/demo/dialog/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Dialog</span>
+              </a><a href="/demo/drawer/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Drawer</span>
+              </a><a href="/demo/elevation/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Elevation</span>
+              </a><a href="/demo/image-list/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Image List</span>
+              </a><span class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="" tabindex="-1"><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Inputs and Controls</span>
+              </span><a href="/demo/autocomplete/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Autocomplete</span>
+              </a><a href="/demo/checkbox/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Checkbox</span>
+              </a><a href="/demo/chips/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Chips</span>
+              </a><a href="/demo/form-field/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Form Field</span>
+              </a><a href="/demo/radio/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Radio Button</span>
+              </a><a href="/demo/segmented-button/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Segmented Button</span>
+              </a><a href="/demo/select/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Select Menu</span>
+              </a><a href="/demo/slider/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Slider</span>
+              </a><a href="/demo/switch/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Switch</span>
+              </a><a href="/demo/textfield/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Text Field</span>
+              </a><a href="/demo/layout-grid/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Layout Grid</span>
+              </a><a href="/demo/list/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">List</span>
+              </a><a href="/demo/menu-surface/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Menu Surface</span>
+              </a><a href="/demo/menu/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Menu</span>
+              </a><a href="/demo/paper/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Paper</span>
+              </a><span class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="" tabindex="-1"><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Progress Indicators</span>
+              </span><a href="/demo/circular-progress/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Circular Progress</span>
+              </a><a href="/demo/linear-progress/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Linear Progress</span>
+              </a><a href="/demo/ripple/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Ripple</span>
+              </a><a href="/demo/snackbar/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Snackbar</span>
+              </a><a href="/demo/tabs/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Tabs</span>
+              </a><a href="/demo/tooltip/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Tooltip</span>
+              </a><a href="/demo/top-app-bar/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Top App Bar</span>
+              </a><a href="/demo/touch-target/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Touch Target</span>
+              </a><a href="/demo/typography/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Typography</span>
+              </a>
+</nav>
+</div>
+</aside>
+
+    
+    <div class="demo-app-content mdc-drawer-app-content"><main class="demo-main-content svelte-nda62k">
+
+<section class="svelte-r8ffx4"><div style="margin: 3em 0 4em;"><h2 style="margin-bottom: 0;">Svelte Material UI</h2>
+    <p class="mdc-typography--subtitle1">Material UI components for Svelte apps
+    </p></div>
+
+  <div style="margin: 4em 0;"><div class="boxes svelte-r8ffx4"><div class="box smui-paper smui-paper--raised smui-paper--elevation-z1 smui-paper--rounded smui-paper--color-primary"><h5 class="smui-paper__title" style="display: flex; justify-content: space-between; align-items: center;"><span>Svelte</span>
+          <svg class="" aria-hidden="true" focusable="false" tabindex="-1" style="width: 1em; height: auto;" viewBox="0 0 24 24"><path fill="currentColor" d="M10.354 21.125a4.44 4.44 0 0 1-4.765-1.767 4.109 4.109 0 0 1-.703-3.107 3.898 3.898 0 0 1 .134-.522l.105-.321.287.21a7.21 7.21 0 0 0 2.186 1.092l.208.063-.02.208a1.253 1.253 0 0 0 .226.83 1.337 1.337 0 0 0 1.435.533 1.231 1.231 0 0 0 .343-.15l5.59-3.562a1.164 1.164 0 0 0 .524-.778 1.242 1.242 0 0 0-.211-.937 1.338 1.338 0 0 0-1.435-.533 1.23 1.23 0 0 0-.343.15l-2.133 1.36a4.078 4.078 0 0 1-1.135.499 4.44 4.44 0 0 1-4.765-1.766 4.108 4.108 0 0 1-.702-3.108 3.855 3.855 0 0 1 1.742-2.582l5.589-3.563a4.072 4.072 0 0 1 1.135-.499 4.44 4.44 0 0 1 4.765 1.767 4.109 4.109 0 0 1 .703 3.107 3.943 3.943 0 0 1-.134.522l-.105.321-.286-.21a7.204 7.204 0 0 0-2.187-1.093l-.208-.063.02-.207a1.255 1.255 0 0 0-.226-.831 1.337 1.337 0 0 0-1.435-.532 1.231 1.231 0 0 0-.343.15L8.62 9.368a1.162 1.162 0 0 0-.524.778 1.24 1.24 0 0 0 .211.937 1.338 1.338 0 0 0 1.435.533 1.235 1.235 0 0 0 .344-.151l2.132-1.36a4.067 4.067 0 0 1 1.135-.498 4.44 4.44 0 0 1 4.765 1.766 4.108 4.108 0 0 1 .702 3.108 3.857 3.857 0 0 1-1.742 2.583l-5.589 3.562a4.072 4.072 0 0 1-1.135.499m10.358-17.95C18.484-.015 14.082-.96 10.9 1.068L5.31 4.63a6.412 6.412 0 0 0-2.896 4.295 6.753 6.753 0 0 0 .666 4.336 6.43 6.43 0 0 0-.96 2.396 6.833 6.833 0 0 0 1.168 5.167c2.229 3.19 6.63 4.135 9.812 2.108l5.59-3.562a6.41 6.41 0 0 0 2.896-4.295 6.756 6.756 0 0 0-.665-4.336 6.429 6.429 0 0 0 .958-2.396 6.831 6.831 0 0 0-1.167-5.168Z"></path></svg>
+</h5>
+        <div class="smui-paper__content">SMUI provides strictly typed Svelte components and actions for a wide
+          variety of interface elements. SMUI also provides helper utilities for
+          building custom and advanced UI components.
+        
+</div>
+</div>
+      <div class="box smui-paper smui-paper--raised smui-paper--elevation-z1 smui-paper--rounded smui-paper--color-svelte-blue"><h5 class="smui-paper__title" style="display: flex; justify-content: space-between; align-items: center;"><span>Material.io</span>
+          <svg class="" aria-hidden="true" focusable="false" tabindex="-1" style="width: 1em; height: auto;" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C5.377 0 0 5.377 0 12s5.377 12 12 12 12-5.377 12-12S18.623 0 12 0zm0 .75c2.871 0 5.482 1.082 7.469 2.85H4.53A11.197 11.197 0 0 1 12 .75zm-7.186 3.6h14.372L12 18.723 4.814 4.35zM3.6 4.53V19.47A11.197 11.197 0 0 1 .75 12c0-2.87 1.082-5.481 2.85-7.468zm16.8 0A11.197 11.197 0 0 1 23.25 12c0 2.871-1.082 5.482-2.85 7.469V4.53zM4.35 5.1l7.275 14.55H4.35V5.1zm15.3 0v14.55h-7.275L19.651 5.1zM4.533 20.4H19.469A11.197 11.197 0 0 1 12 23.25a11.197 11.197 0 0 1-7.468-2.85z"></path></svg>
+</h5>
+        <div class="smui-paper__content">Many SMUI components are based on <a style="color: #fff;" href="https://material.io/develop/web" target="_blank">Material Design Components for Web</a>, by Google. It integrates these components using the
+          <a style="color: #fff;" href="https://material.io/develop/web/guides/framework-integration" target="_blank">&quot;Advanced Approach&quot;</a>, where the MDC Foundation does some business logic, and the SMUI
+          component handles DOM updates and data binding.
+        
+</div>
+</div>
+      <div class="box smui-paper smui-paper--raised smui-paper--elevation-z1 smui-paper--rounded smui-paper--color-secondary"><h5 class="smui-paper__title" style="display: flex; justify-content: space-between; align-items: center;"><span>Sass</span>
+          <svg class="" aria-hidden="true" focusable="false" tabindex="-1" style="width: 1em; height: auto;" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zM9.615 15.998c.175.645.156 1.248-.024 1.792l-.065.18c-.024.061-.052.12-.078.176-.14.29-.326.56-.555.81-.698.759-1.672 1.047-2.09.805-.45-.262-.226-1.335.584-2.19.871-.918 2.12-1.509 2.12-1.509v-.003l.108-.061zm9.911-10.861c-.542-2.133-4.077-2.834-7.422-1.645-1.989.707-4.144 1.818-5.693 3.267C4.568 8.48 4.275 9.98 4.396 10.607c.427 2.211 3.457 3.657 4.703 4.73v.006c-.367.18-3.056 1.529-3.686 2.925-.675 1.47.105 2.521.615 2.655 1.575.436 3.195-.36 4.065-1.649.84-1.261.766-2.881.404-3.676.496-.135 1.08-.195 1.83-.104 2.101.24 2.521 1.56 2.43 2.1-.09.539-.523.854-.674.944-.15.091-.195.12-.181.181.015.09.091.09.21.075.165-.03 1.096-.45 1.141-1.471.045-1.29-1.186-2.729-3.375-2.7-.9.016-1.471.091-1.875.256-.03-.045-.061-.075-.105-.105-1.35-1.455-3.855-2.475-3.75-4.41.03-.705.285-2.564 4.8-4.814 3.705-1.846 6.661-1.335 7.171-.21.733 1.604-1.576 4.59-5.431 5.024-1.47.165-2.235-.404-2.431-.615-.209-.225-.239-.24-.314-.194-.12.06-.045.255 0 .375.12.3.585.825 1.396 1.095.704.225 2.43.359 4.5-.45 2.324-.899 4.139-3.405 3.614-5.505l.073.067z"></path></svg>
+</h5>
+        <div class="smui-paper__content">Like MDC-Web, SMUI is styled through Sass. SMUI supports all of the
+          mixins provided by Material Design Components for Web, and provides
+          some additional helpful mixins. You can customize the look of your UI
+          with <a style="color: #fff;" href="https://github.com/hperrin/svelte-material-ui/blob/master/packages/site/src/theme/_smui-theme.scss" target="_blank">just a few variables</a>.
+        
+</div>
+</div></div>
+
+    <div style="margin: 6em 0 4em;"><h4>SMUI Features and Values</h4></div>
+
+    <div style="margin: 4em 0;"><ul class="mdc-deprecated-list mdc-deprecated-list--non-interactive mdc-deprecated-list--two-line" role="list" style="border: 1px solid var(--mdc-theme-text-hint-on-background, rgba(0, 0, 0, 0.1));"><li class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="height: auto; min-height: 64px;" aria-disabled="false" tabindex="-1"><span class="mdc-deprecated-list-item__graphic" style="height: auto; width: auto;"><svg class="" aria-hidden="true" focusable="false" tabindex="-1" style="width: 40px; height: 40px;" viewBox="0 0 24 24"><path fill="currentColor" d="M3,3H21V21H3V3M13.71,17.86C14.21,18.84 15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 15.89,13.37C15.89,12.96 16.2,12.64 16.7,12.64C17.18,12.64 17.5,12.85 17.79,13.37L19.1,12.5C18.55,11.54 17.77,11.17 16.7,11.17C15.19,11.17 14.22,12.13 14.22,13.4C14.22,14.78 15.03,15.43 16.25,15.95L16.67,16.13C17.45,16.47 17.91,16.68 17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86M13,11.25H8V12.75H9.5V20H11.25V12.75H13V11.25Z"></path></svg></span>
+          <span class="mdc-deprecated-list-item__text"><span class="mdc-deprecated-list-item__primary-text">Fully, Strictly Typed</span>
+            <span class="mdc-deprecated-list-item__secondary-text" style="white-space: normal;">SMUI is strictly typed with TypeScript. This not only helps catch
+              bugs early, it helps while developing as every property is
+              autocompleted by modern IDEs.
+            </span></span>
+</li>
+        <li class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="height: auto; min-height: 64px;" aria-disabled="false" tabindex="-1"><span class="mdc-deprecated-list-item__graphic" style="height: auto; width: auto;"><svg class="" aria-hidden="true" focusable="false" tabindex="-1" style="width: 40px; height: 40px;" viewBox="0 0 24 24"><path fill="currentColor" d="M21,9H15V22H13V16H11V22H9V9H3V7H21M12,2A2,2 0 0,1 14,4A2,2 0 0,1 12,6C10.89,6 10,5.1 10,4C10,2.89 10.89,2 12,2Z"></path></svg></span>
+          <span class="mdc-deprecated-list-item__text"><span class="mdc-deprecated-list-item__primary-text">Accessible by Default</span>
+            <span class="mdc-deprecated-list-item__secondary-text" style="white-space: normal;">SMUI automatically adds appropriate ARIA attributes to components
+              to provide accessibility to screen readers. SMUI is also fully
+              keyboard accessible, meaning motor impaired users can easily use
+              SMUI components.
+            </span></span>
+</li>
+        <li class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="height: auto; min-height: 64px;" aria-disabled="false" tabindex="-1"><span class="mdc-deprecated-list-item__graphic" style="height: auto; width: auto;"><svg class="" aria-hidden="true" focusable="false" tabindex="-1" style="width: 40px; height: 40px;" viewBox="0 0 24 24"><path fill="currentColor" d="M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z"></path></svg></span>
+          <span class="mdc-deprecated-list-item__text"><span class="mdc-deprecated-list-item__primary-text">Touch Friendly</span>
+            <span class="mdc-deprecated-list-item__secondary-text" style="white-space: normal;">SMUI provides increased touch targets to allow ease of use on
+              mobile devices, conforming to the Material Spec requirement of
+              minimum 48px x 48px touch targets.
+            </span></span>
+</li>
+        <li class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="height: auto; min-height: 64px;" aria-disabled="false" tabindex="-1"><span class="mdc-deprecated-list-item__graphic" style="height: auto; width: auto;"><svg class="" aria-hidden="true" focusable="false" tabindex="-1" style="width: 40px; height: 40px;" viewBox="0 0 24 24"><path fill="currentColor" d="M9,6H5V10H7V8H9M19,10H17V12H15V14H19M21,16H3V4H21M21,2H3C1.89,2 1,2.89 1,4V16A2,2 0 0,0 3,18H10V20H8V22H16V20H14V18H21A2,2 0 0,0 23,16V4C23,2.89 22.1,2 21,2"></path></svg></span>
+          <span class="mdc-deprecated-list-item__text"><span class="mdc-deprecated-list-item__primary-text">Server Side Rendering</span>
+            <span class="mdc-deprecated-list-item__secondary-text" style="white-space: normal;">SMUI can be fully rendered on the server, meaning faster time to
+              first meaningful paint. SMUI fully supports SvelteKit. In fact,
+              the site you&#39;re looking at is a SvelteKit app.
+            </span></span>
+</li>
+        <li class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="height: auto; min-height: 64px;" aria-disabled="false" tabindex="-1"><span class="mdc-deprecated-list-item__graphic" style="height: auto; width: auto;"><svg class="" aria-hidden="true" focusable="false" tabindex="-1" style="width: 40px; height: 40px;" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,9A1.5,1.5 0 0,1 19,10.5A1.5,1.5 0 0,1 17.5,12M14.5,8A1.5,1.5 0 0,1 13,6.5A1.5,1.5 0 0,1 14.5,5A1.5,1.5 0 0,1 16,6.5A1.5,1.5 0 0,1 14.5,8M9.5,8A1.5,1.5 0 0,1 8,6.5A1.5,1.5 0 0,1 9.5,5A1.5,1.5 0 0,1 11,6.5A1.5,1.5 0 0,1 9.5,8M6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A1.5,1.5 0 0,0 13.5,19.5C13.5,19.11 13.35,18.76 13.11,18.5C12.88,18.23 12.73,17.88 12.73,17.5A1.5,1.5 0 0,1 14.23,16H16A5,5 0 0,0 21,11C21,6.58 16.97,3 12,3Z"></path></svg></span>
+          <span class="mdc-deprecated-list-item__text"><span class="mdc-deprecated-list-item__primary-text">Fully Themable</span>
+            <span class="mdc-deprecated-list-item__secondary-text" style="white-space: normal;">Components are themable using Sass variables, provided by MDC-Web.
+              Everything from their shape, color, density, borders, interaction
+              states, and more is themable.
+            </span></span>
+</li>
+        <li class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="height: auto; min-height: 64px;" aria-disabled="false" tabindex="-1"><span class="mdc-deprecated-list-item__graphic" style="height: auto; width: auto;"><svg class="" aria-hidden="true" focusable="false" tabindex="-1" style="width: 40px; height: 40px;" viewBox="0 0 24 24"><path fill="currentColor" d="M20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H8V21C8 21.6 8.4 22 9 22H9.5C9.7 22 10 21.9 10.2 21.7L13.9 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2M16 11H11.5L13.3 12.8L12 14L8 10L12 6L13.2 7.2L11.5 9H16V11Z"></path></svg></span>
+          <span class="mdc-deprecated-list-item__text"><span class="mdc-deprecated-list-item__primary-text">RTL Support</span>
+            <span class="mdc-deprecated-list-item__secondary-text" style="white-space: normal;">SMUI is RTL aware, and components will adapt their design to suit
+              the language of the user.
+            </span></span>
+</li>
+        <li class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="height: auto; min-height: 64px;" aria-disabled="false" tabindex="-1"><span class="mdc-deprecated-list-item__graphic" style="height: auto; width: auto;"><svg class="" aria-hidden="true" focusable="false" tabindex="-1" style="width: 40px; height: 40px;" viewBox="0 0 24 24"><path fill="currentColor" d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"></path></svg></span>
+          <span class="mdc-deprecated-list-item__text"><span class="mdc-deprecated-list-item__primary-text">Widely Used, a Growing Community</span>
+            <span class="mdc-deprecated-list-item__secondary-text" style="white-space: normal;">With over <a href="https://github.com/hperrin/svelte-material-ui/network/dependents?package_id=UGFja2FnZS01NTM5MDg5MDQ" target="_blank">1200 projects</a> using SMUI components, it is the most popular Svelte UI library.
+              For good reason, too. It is the most versatile and adaptable Svelte
+              UI library, guaranteed.
+            </span></span>
+</li>
+        <li class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="height: auto; min-height: 64px;" aria-disabled="false" tabindex="-1"><span class="mdc-deprecated-list-item__graphic" style="height: auto; width: auto;"><svg class="" aria-hidden="true" focusable="false" tabindex="-1" style="width: 40px; height: 40px;" viewBox="0 0 24 24"><path fill="currentColor" d="M10,4V1L14,5L10,9V6A6,6 0 0,0 4,12L4.08,13H2.06L2,12A8,8 0 0,1 10,4M17,2H20A2,2 0 0,1 22,4V20A2,2 0 0,1 20,22H17A2,2 0 0,1 15,20V4A2,2 0 0,1 17,2M4,15H13V22H4A2,2 0 0,1 2,20V17A2,2 0 0,1 4,15Z"></path></svg></span>
+          <span class="mdc-deprecated-list-item__text"><span class="mdc-deprecated-list-item__primary-text">Adaptable, Versatile</span>
+            <span class="mdc-deprecated-list-item__secondary-text" style="white-space: normal;">SMUI supports adding arbitrary attributes and actions to every
+              component and many internal elements within them. SMUI forwards
+              all events from every component, and supports event modifiers,
+              including passive. SMUI works in the Svelte REPL, meaning you can <a href="https://svelte.dev/repl/aa857c3bb5eb478cbe6b1fd6c6da522a?version=3.44.1" target="_blank">play with it right now</a>.
+            </span></span>
+</li>
+        <li class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="height: auto; min-height: 64px;" aria-disabled="false" tabindex="-1"><span class="mdc-deprecated-list-item__graphic" style="height: auto; width: auto;"><svg class="" aria-hidden="true" focusable="false" tabindex="-1" style="width: 40px; height: 40px;" viewBox="0 0 24 24"><path fill="currentColor" d="M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M19,3H14.82C14.4,1.84 13.3,1 12,1C10.7,1 9.6,1.84 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3Z"></path></svg></span>
+          <span class="mdc-deprecated-list-item__text"><span class="mdc-deprecated-list-item__primary-text">Material Design Compliant</span>
+            <span class="mdc-deprecated-list-item__secondary-text" style="white-space: normal;">Every SMUI component fully follows the Material Design
+              specification. You can build up-to-spec UIs with SMUI.
+            </span></span>
+</li>
+</ul></div></div>
+
+  <div style="margin: 4em 0;"><p>[
+      <a href="https://discord.gg/aFzmkrmg9P">Discord</a>
+      |
+      <a href="https://github.com/hperrin/svelte-material-ui">GitHub</a>
+      |
+      <a href="https://github.com/hperrin/svelte-material-ui/issues">Issue Tracker</a>
+      | © 2022 Hunter Perrin ]
+    </p></div>
+</section></main>
+</div></div>
+
+
+		<script type="module" data-sveltekit-hydrate="12gm8gr">
+		import { set_public_env, start } from "./_app/immutable/start-7c2fd269.js";
+
+		set_public_env({});
+
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="12gm8gr"]').parentNode,
+			paths: {"base":"","assets":""},
+			route: true,
+			spa: false,
+			trailing_slash: "ignore",
+			hydrate: {
+				status: 200,
+				error: null,
+				node_ids: [0, 2],
+				params: {},
+				routeId: ""
+			}
+		});
+	</script>
+	</div>
+  </body>
+</html>

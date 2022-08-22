@@ -1,0 +1,1 @@
+import{default as a}from"../components/pages/demo/data-table/iframe/_page.svelte-a5403399.js";import"./index-0280c2c9.js";import"./index-ef436614.js";import"./useActions-d72238ee.js";import"./index-e6d49891.js";import"./prefixFilter-4c6b67e2.js";export{a as component};

@@ -1,0 +1,1 @@
+import{default as n}from"../components/pages/demo/top-app-bar/iframe/dense/_page.svelte-3a7be27d.js";import"./index-0280c2c9.js";import"./index-44fc168d.js";import"./index-e6d49891.js";import"./useActions-d72238ee.js";import"./Ripple-3b49acfc.js";import"./IconButton-f355b8c9.js";import"./LoremIpsum-d8b0b333.js";export{n as component};

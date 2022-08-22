@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Material UI Components for Svelte, ready to use in your app."
+    />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@SciActive" />
+    <meta name="twitter:creator" content="@SciActive" />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Svelte Material UI" />
+    <meta property="og:url" content="https://sveltematerialui.com/" />
+    <meta
+      property="og:image"
+      content="https://sveltematerialui.com/header.png"
+    />
+    <meta
+      property="og:description"
+      content="Material UI Components for Svelte, ready to use in your app."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../../icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../../icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../../icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../../icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../../icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../../icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../../icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../../icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../../icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="../../ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts and CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+    />
+
+    <!-- Highlight.js Theme (For Markdown Pages) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/highlight.js@11.5.1/styles/obsidian.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    <meta http-equiv="content-security-policy" content=""><title>Switch - SMUI</title>
+    <link rel="stylesheet" href="/smui.css" media="(prefers-color-scheme: light)" class="svelte-nda62k" data-svelte="svelte-cujaw0">
+    <link rel="stylesheet" href="/smui-dark.css" media="screen and (prefers-color-scheme: dark)" class="svelte-nda62k" data-svelte="svelte-cujaw0">
+
+    
+    <link rel="stylesheet" href="/site.css" media="(prefers-color-scheme: light)" class="svelte-nda62k" data-svelte="svelte-cujaw0">
+    <link rel="stylesheet" href="/site-dark.css" media="screen and (prefers-color-scheme: dark)" class="svelte-nda62k" data-svelte="svelte-cujaw0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/itmatters@1.0.1/index.css" class="svelte-nda62k" data-svelte="svelte-cujaw0">
+	<link href="../../_app/immutable/assets/+layout-9b7bd2ce.css" rel="stylesheet">
+	<link href="../../_app/immutable/assets/Demo-10554779.css" rel="stylesheet">
+	<link rel="modulepreload" href="../../_app/immutable/start-7c2fd269.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/index-0280c2c9.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/singletons-53b422a2.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/index-e6d49891.js">
+	<link rel="modulepreload" href="../../_app/immutable/components/pages/_layout.svelte-adad394c.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/index-d8420db7.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/useActions-d72238ee.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/Ripple-3b49acfc.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/icons-7ce10349.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/TinyGesture-a8ba9ee8.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/stores-73f6ac17.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/index-44fc168d.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/index-d80d1894.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/focus-trap-b9633c61.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/IconButton-f355b8c9.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/index-9bfd9c52.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/index-f615c1f2.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/prefixFilter-4c6b67e2.js">
+	<link rel="modulepreload" href="../../_app/immutable/components/pages/demo/switch/_page.svelte-07566620.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/Demo-e2a9d837.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/Switch-89885e29.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/FormField-8a1d3faf.js">
+	<link rel="modulepreload" href="../../_app/immutable/chunks/Button-f2f1a8f8.js">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-79MKYND6TX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-79MKYND6TX');
+    </script>
+  </head>
+  <body class="ukraine">
+    <div id="smui-app">
+
+
+
+
+
+
+
+
+<header class="demo-top-app-bar mdc-top-app-bar smui-top-app-bar--static" style=""><div class="mdc-top-app-bar__row"><section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <a href="/" class="mdc-theme--primary mdc-top-app-bar__title" style="">Svelte Material UI</a>
+</section>
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar" style="color: var(--mdc-on-surface, #000);"><a href="https://github.com/hperrin/svelte-material-ui/tree/master/packages/switch" class="mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__action-item" style="" target="_blank"><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z" class="svelte-nda62k"></path>
+                </svg>
+              </a>
+              <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-1079"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">View Docs: switch</div>
+</div>
+            
+        <a href="https://discord.gg/aFzmkrmg9P" class="mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__action-item" style=""><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" class="svelte-nda62k"></path></svg></a>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-1080"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">Join the Discord Server</div>
+</div>
+        <a href="https://twitter.com/SciActive" class="mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__action-item" style=""><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" class="svelte-nda62k"></path></svg></a>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-1081"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">Hunter Perrin (SMUI Author) on Twitter</div>
+</div>
+        <a href="https://github.com/hperrin/svelte-material-ui" class="mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__action-item" style=""><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" class="svelte-nda62k"></path></svg></a>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-1082"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">SMUI on GitHub</div>
+</div>
+        <button class="mdc-icon-button mdc-icon-button--display-flex mdc-top-app-bar__action-item" style=""><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon mdc-icon-button__icon--on" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z" class="svelte-nda62k"></path></svg>
+            <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,2L14.39,5.42C13.65,5.15 12.84,5 12,5C11.16,5 10.35,5.15 9.61,5.42L12,2M3.34,7L7.5,6.65C6.9,7.16 6.36,7.78 5.94,8.5C5.5,9.24 5.25,10 5.11,10.79L3.34,7M3.36,17L5.12,13.23C5.26,14 5.53,14.78 5.95,15.5C6.37,16.24 6.91,16.86 7.5,17.37L3.36,17M20.65,7L18.88,10.79C18.74,10 18.47,9.23 18.05,8.5C17.63,7.78 17.1,7.15 16.5,6.64L20.65,7M20.64,17L16.5,17.36C17.09,16.85 17.62,16.22 18.04,15.5C18.46,14.77 18.73,14 18.87,13.21L20.64,17M12,22L9.59,18.56C10.33,18.83 11.14,19 12,19C12.82,19 13.63,18.83 14.37,18.56L12,22Z" class="svelte-nda62k"></path></svg></button>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-1083"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">Lights on</div>
+</div>
+</section>
+</div>
+</header>
+  <div class="drawer-container svelte-nda62k"><aside class="demo-drawer mdc-theme--secondary-bg hide-initial-small mdc-drawer"><div class="mdc-drawer__content"><nav class="mdc-deprecated-list" role="list"><a href="/INSTALL.md" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Installation</span>
+              </a><a href="/SVELTEKIT.md" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">SvelteKit</span>
+              </a><a href="/THEMING.md" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Theming</span>
+              </a><a href="/MIGRATING.md" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Migrating</span>
+              </a><hr class="mdc-deprecated-list-divider" role="separator">
+<a href="/demo/accordion/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Accordion</span>
+              </a><a href="/demo/badge/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Badge</span>
+              </a><a href="/demo/banner/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Banner</span>
+              </a><span class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="" tabindex="-1"><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Action Buttons</span>
+              </span><a href="/demo/button/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Button</span>
+              </a><a href="/demo/fab/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Floating Action Button</span>
+              </a><a href="/demo/icon-button/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Icon Button</span>
+              </a><a href="/demo/card/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Cards</span>
+              </a><a href="/demo/common/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Common</span>
+              </a><a href="/demo/data-table/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Data Table</span>
+              </a><a href="/demo/dialog/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Dialog</span>
+              </a><a href="/demo/drawer/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Drawer</span>
+              </a><a href="/demo/elevation/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Elevation</span>
+              </a><a href="/demo/image-list/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Image List</span>
+              </a><span class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="" tabindex="-1"><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Inputs and Controls</span>
+              </span><a href="/demo/autocomplete/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Autocomplete</span>
+              </a><a href="/demo/checkbox/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Checkbox</span>
+              </a><a href="/demo/chips/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Chips</span>
+              </a><a href="/demo/form-field/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Form Field</span>
+              </a><a href="/demo/radio/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Radio Button</span>
+              </a><a href="/demo/segmented-button/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Segmented Button</span>
+              </a><a href="/demo/select/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Select Menu</span>
+              </a><a href="/demo/slider/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Slider</span>
+              </a><a href="/demo/switch/" class="mdc-deprecated-list-item mdc-deprecated-list-item--activated" style="margin-left: 25px;" aria-current="page" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Switch</span>
+              </a><a href="/demo/textfield/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Text Field</span>
+              </a><a href="/demo/layout-grid/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Layout Grid</span>
+              </a><a href="/demo/list/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">List</span>
+              </a><a href="/demo/menu-surface/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Menu Surface</span>
+              </a><a href="/demo/menu/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Menu</span>
+              </a><a href="/demo/paper/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Paper</span>
+              </a><span class="mdc-deprecated-list-item smui-menu-item--non-interactive" style="" tabindex="-1"><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Progress Indicators</span>
+              </span><a href="/demo/circular-progress/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Circular Progress</span>
+              </a><a href="/demo/linear-progress/" class="mdc-deprecated-list-item" style="margin-left: 25px;" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Linear Progress</span>
+              </a><a href="/demo/ripple/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Ripple</span>
+              </a><a href="/demo/snackbar/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Snackbar</span>
+              </a><a href="/demo/tabs/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Tabs</span>
+              </a><a href="/demo/tooltip/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Tooltip</span>
+              </a><a href="/demo/top-app-bar/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Top App Bar</span>
+              </a><a href="/demo/touch-target/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Touch Target</span>
+              </a><a href="/demo/typography/" class="mdc-deprecated-list-item" style="" tabindex="-1"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-theme--on-secondary mdc-deprecated-list-item__text">Typography</span>
+              </a>
+</nav>
+</div>
+</aside>
+
+    
+    <div class="demo-app-content mdc-drawer-app-content"><main class="demo-main-content svelte-nda62k">
+
+<section><h2>Switch</h2>
+
+  <h5>Installation</h5>
+
+  <pre class="demo-spaced">npm i -D @smui/switch</pre>
+
+  <h5>Demos</h5>
+
+  <div class="demo-spaced mdc-card"><div class="smui-card__content"><h6 class="mdc-typography--headline6" style="margin: 0;"></h6>
+    
+    <div><div><div class="mdc-form-field"><button class="mdc-switch mdc-switch--unselected" type="button" role="switch" aria-checked="false" id="SMUI-form-field-125"><div class="mdc-switch__track"></div>
+  <div class="mdc-switch__handle-track"><div class="mdc-switch__handle"><div class="mdc-switch__shadow"><div class="mdc-elevation-overlay"></div></div>
+      <div class="mdc-switch__ripple"></div>
+      <div class="mdc-switch__icons"><svg class="mdc-switch__icon mdc-switch__icon--on" viewBox="0 0 24 24"><path d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"></path></svg>
+          <svg class="mdc-switch__icon mdc-switch__icon--off" viewBox="0 0 24 24"><path d="M20 13H4v-2h16v2z"></path></svg></div></div></div>
+</button>
+  <label for="SMUI-form-field-125"><span slot="label">Fields of grain.</span></label>
+</div></div>
+
+<pre class="status">Checked: false</pre>
+
+<div style="margin-top: 1em;"><div class="mdc-form-field mdc-form-field--align-end"><button class="mdc-switch mdc-switch--unselected" type="button" role="switch" aria-checked="false" id="SMUI-form-field-126"><div class="mdc-switch__track"></div>
+  <div class="mdc-switch__handle-track"><div class="mdc-switch__handle"><div class="mdc-switch__shadow"><div class="mdc-elevation-overlay"></div></div>
+      <div class="mdc-switch__ripple"></div>
+      <div class="mdc-switch__icons"><svg class="mdc-switch__icon mdc-switch__icon--on" viewBox="0 0 24 24"><path d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"></path></svg>
+          <svg class="mdc-switch__icon mdc-switch__icon--off" viewBox="0 0 24 24"><path d="M20 13H4v-2h16v2z"></path></svg></div></div></div>
+</button>
+  <label for="SMUI-form-field-126"><span slot="label">Fields of grain.</span></label>
+</div></div>
+
+<div style="margin-top: 1em;"><button class="mdc-button" style=""><div class="mdc-button__ripple"></div>
+  Toggle Programmatically
+  </button></div>
+
+<pre class="status">Checked: false</pre></div>
+</div>
+
+  
+  <div class="mdc-card__actions"><div class="mdc-card__action-icons"><a href="https://github.com/hperrin/svelte-material-ui/blob/master/packages/site/src/routes/demo/switch/_Simple.svelte" class="mdc-icon-button mdc-icon-button--display-flex mdc-card__action mdc-card__action--icon" style="" target="_blank"><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+            </svg>
+          </a>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-1084"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">View switch/_Simple.svelte on GitHub</div>
+</div>
+        
+      <button class="mdc-icon-button mdc-icon-button--display-flex mdc-card__action mdc-card__action--icon" style="" aria-pressed="false"><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon mdc-icon-button__icon--on" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M6.59,3.41L2,8L6.59,12.6L8,11.18L4.82,8L8,4.82L6.59,3.41M12.41,3.41L11,4.82L14.18,8L11,11.18L12.41,12.6L17,8L12.41,3.41M21.59,11.59L13.5,19.68L9.83,16L8.42,17.41L13.5,22.5L23,13L21.59,11.59Z"></path></svg>
+          <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z"></path></svg></button>
+        <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-1085"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">Show the source code</div>
+</div>
+</div>
+</div>
+</div>
+
+  <div class="demo-spaced mdc-card"><div class="smui-card__content"><h6 class="mdc-typography--headline6" style="margin: 0;">Secondary color
+  </h6>
+    
+    <div><div><div class="mdc-form-field"><button class="mdc-switch mdc-switch--unselected smui-switch--color-secondary" type="button" role="switch" aria-checked="false" id="SMUI-form-field-127"><div class="mdc-switch__track"></div>
+  <div class="mdc-switch__handle-track"><div class="mdc-switch__handle"><div class="mdc-switch__shadow"><div class="mdc-elevation-overlay"></div></div>
+      <div class="mdc-switch__ripple"></div>
+      <div class="mdc-switch__icons"><svg class="mdc-switch__icon mdc-switch__icon--on" viewBox="0 0 24 24"><path d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"></path></svg>
+          <svg class="mdc-switch__icon mdc-switch__icon--off" viewBox="0 0 24 24"><path d="M20 13H4v-2h16v2z"></path></svg></div></div></div>
+</button>
+  <label for="SMUI-form-field-127"><span slot="label">Fields of grain.</span></label>
+</div></div>
+
+<pre class="status">Checked: false</pre>
+
+<div style="margin-top: 1em;"><div class="mdc-form-field mdc-form-field--align-end"><button class="mdc-switch mdc-switch--unselected smui-switch--color-secondary" type="button" role="switch" aria-checked="false" id="SMUI-form-field-128"><div class="mdc-switch__track"></div>
+  <div class="mdc-switch__handle-track"><div class="mdc-switch__handle"><div class="mdc-switch__shadow"><div class="mdc-elevation-overlay"></div></div>
+      <div class="mdc-switch__ripple"></div>
+      <div class="mdc-switch__icons"><svg class="mdc-switch__icon mdc-switch__icon--on" viewBox="0 0 24 24"><path d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"></path></svg>
+          <svg class="mdc-switch__icon mdc-switch__icon--off" viewBox="0 0 24 24"><path d="M20 13H4v-2h16v2z"></path></svg></div></div></div>
+</button>
+  <label for="SMUI-form-field-128"><span slot="label">Fields of grain.</span></label>
+</div></div>
+
+<pre class="status">Checked: false</pre></div>
+</div>
+
+  
+  <div class="mdc-card__actions"><div class="mdc-card__action-icons"><a href="https://github.com/hperrin/svelte-material-ui/blob/master/packages/site/src/routes/demo/switch/_SecondaryColor.svelte" class="mdc-icon-button mdc-icon-button--display-flex mdc-card__action mdc-card__action--icon" style="" target="_blank"><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+            </svg>
+          </a>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-1086"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">View switch/_SecondaryColor.svelte on GitHub</div>
+</div>
+        
+      <button class="mdc-icon-button mdc-icon-button--display-flex mdc-card__action mdc-card__action--icon" style="" aria-pressed="false"><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon mdc-icon-button__icon--on" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M6.59,3.41L2,8L6.59,12.6L8,11.18L4.82,8L8,4.82L6.59,3.41M12.41,3.41L11,4.82L14.18,8L11,11.18L12.41,12.6L17,8L12.41,3.41M21.59,11.59L13.5,19.68L9.83,16L8.42,17.41L13.5,22.5L23,13L21.59,11.59Z"></path></svg>
+          <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z"></path></svg></button>
+        <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-1087"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">Show the source code</div>
+</div>
+</div>
+</div>
+</div>
+
+  <div class="demo-spaced mdc-card"><div class="smui-card__content"><h6 class="mdc-typography--headline6" style="margin: 0;">Group switch</h6>
+    
+    <div><div><div class="mdc-form-field"><button class="mdc-switch mdc-switch--unselected" type="button" role="switch" aria-checked="false" id="SMUI-form-field-129"><div class="mdc-switch__track"></div>
+  <div class="mdc-switch__handle-track"><div class="mdc-switch__handle"><div class="mdc-switch__shadow"><div class="mdc-elevation-overlay"></div></div>
+      <div class="mdc-switch__ripple"></div>
+      <div class="mdc-switch__icons"><svg class="mdc-switch__icon mdc-switch__icon--on" viewBox="0 0 24 24"><path d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"></path></svg>
+          <svg class="mdc-switch__icon mdc-switch__icon--off" viewBox="0 0 24 24"><path d="M20 13H4v-2h16v2z"></path></svg></div></div></div>
+</button>
+      
+    
+  <label for="SMUI-form-field-129"><span slot="label">Bashful</span></label>
+</div>
+  </div><div><div class="mdc-form-field"><button class="mdc-switch mdc-switch--unselected" type="button" role="switch" aria-checked="false" disabled id="SMUI-form-field-130"><div class="mdc-switch__track"></div>
+  <div class="mdc-switch__handle-track"><div class="mdc-switch__handle"><div class="mdc-switch__shadow"><div class="mdc-elevation-overlay"></div></div>
+      <div class="mdc-switch__ripple"></div>
+      <div class="mdc-switch__icons"><svg class="mdc-switch__icon mdc-switch__icon--on" viewBox="0 0 24 24"><path d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"></path></svg>
+          <svg class="mdc-switch__icon mdc-switch__icon--off" viewBox="0 0 24 24"><path d="M20 13H4v-2h16v2z"></path></svg></div></div></div>
+</button>
+      
+    
+  <label for="SMUI-form-field-130"><span slot="label">Doc (disabled)</span></label>
+</div>
+  </div><div><div class="mdc-form-field"><button class="mdc-switch mdc-switch--unselected" type="button" role="switch" aria-checked="false" id="SMUI-form-field-131"><div class="mdc-switch__track"></div>
+  <div class="mdc-switch__handle-track"><div class="mdc-switch__handle"><div class="mdc-switch__shadow"><div class="mdc-elevation-overlay"></div></div>
+      <div class="mdc-switch__ripple"></div>
+      <div class="mdc-switch__icons"><svg class="mdc-switch__icon mdc-switch__icon--on" viewBox="0 0 24 24"><path d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"></path></svg>
+          <svg class="mdc-switch__icon mdc-switch__icon--off" viewBox="0 0 24 24"><path d="M20 13H4v-2h16v2z"></path></svg></div></div></div>
+</button>
+      
+    
+  <label for="SMUI-form-field-131"><span slot="label">Dopey</span></label>
+</div>
+  </div><div><div class="mdc-form-field"><button class="mdc-switch mdc-switch--selected" type="button" role="switch" aria-checked="true" id="SMUI-form-field-132"><div class="mdc-switch__track"></div>
+  <div class="mdc-switch__handle-track"><div class="mdc-switch__handle"><div class="mdc-switch__shadow"><div class="mdc-elevation-overlay"></div></div>
+      <div class="mdc-switch__ripple"></div>
+      <div class="mdc-switch__icons"><svg class="mdc-switch__icon mdc-switch__icon--on" viewBox="0 0 24 24"><path d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"></path></svg>
+          <svg class="mdc-switch__icon mdc-switch__icon--off" viewBox="0 0 24 24"><path d="M20 13H4v-2h16v2z"></path></svg></div></div></div>
+</button>
+      
+    
+  <label for="SMUI-form-field-132"><span slot="label">Happy</span></label>
+</div>
+  </div><div><div class="mdc-form-field"><button class="mdc-switch mdc-switch--unselected" type="button" role="switch" aria-checked="false" id="SMUI-form-field-133"><div class="mdc-switch__track"></div>
+  <div class="mdc-switch__handle-track"><div class="mdc-switch__handle"><div class="mdc-switch__shadow"><div class="mdc-elevation-overlay"></div></div>
+      <div class="mdc-switch__ripple"></div>
+      <div class="mdc-switch__icons"><svg class="mdc-switch__icon mdc-switch__icon--on" viewBox="0 0 24 24"><path d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"></path></svg>
+          <svg class="mdc-switch__icon mdc-switch__icon--off" viewBox="0 0 24 24"><path d="M20 13H4v-2h16v2z"></path></svg></div></div></div>
+</button>
+      
+    
+  <label for="SMUI-form-field-133"><span slot="label">Sleepy</span></label>
+</div>
+  </div><div><div class="mdc-form-field"><button class="mdc-switch mdc-switch--unselected" type="button" role="switch" aria-checked="false" id="SMUI-form-field-134"><div class="mdc-switch__track"></div>
+  <div class="mdc-switch__handle-track"><div class="mdc-switch__handle"><div class="mdc-switch__shadow"><div class="mdc-elevation-overlay"></div></div>
+      <div class="mdc-switch__ripple"></div>
+      <div class="mdc-switch__icons"><svg class="mdc-switch__icon mdc-switch__icon--on" viewBox="0 0 24 24"><path d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"></path></svg>
+          <svg class="mdc-switch__icon mdc-switch__icon--off" viewBox="0 0 24 24"><path d="M20 13H4v-2h16v2z"></path></svg></div></div></div>
+</button>
+      
+    
+  <label for="SMUI-form-field-134"><span slot="label">Sneezy</span></label>
+</div>
+  </div><div><div class="mdc-form-field"><button class="mdc-switch mdc-switch--selected" type="button" role="switch" aria-checked="true" id="SMUI-form-field-135"><div class="mdc-switch__track"></div>
+  <div class="mdc-switch__handle-track"><div class="mdc-switch__handle"><div class="mdc-switch__shadow"><div class="mdc-elevation-overlay"></div></div>
+      <div class="mdc-switch__ripple"></div>
+      <div class="mdc-switch__icons"><svg class="mdc-switch__icon mdc-switch__icon--on" viewBox="0 0 24 24"><path d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"></path></svg>
+          <svg class="mdc-switch__icon mdc-switch__icon--off" viewBox="0 0 24 24"><path d="M20 13H4v-2h16v2z"></path></svg></div></div></div>
+</button>
+      
+    
+  <label for="SMUI-form-field-135"><span slot="label">Grumpy</span></label>
+</div>
+  </div>
+
+<div style="margin-top: 1em;"><button class="mdc-button" style=""><div class="mdc-button__ripple"></div>
+  Toggle Doc Programmatically
+  </button></div>
+
+<pre class="status">Selected: Happy, Grumpy</pre></div>
+</div>
+
+  
+  <div class="mdc-card__actions"><div class="mdc-card__action-icons"><a href="https://github.com/hperrin/svelte-material-ui/blob/master/packages/site/src/routes/demo/switch/_Group.svelte" class="mdc-icon-button mdc-icon-button--display-flex mdc-card__action mdc-card__action--icon" style="" target="_blank"><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+            </svg>
+          </a>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-1088"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">View switch/_Group.svelte on GitHub</div>
+</div>
+        
+      <button class="mdc-icon-button mdc-icon-button--display-flex mdc-card__action mdc-card__action--icon" style="" aria-pressed="false"><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon mdc-icon-button__icon--on" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M6.59,3.41L2,8L6.59,12.6L8,11.18L4.82,8L8,4.82L6.59,3.41M12.41,3.41L11,4.82L14.18,8L11,11.18L12.41,12.6L17,8L12.41,3.41M21.59,11.59L13.5,19.68L9.83,16L8.42,17.41L13.5,22.5L23,13L21.59,11.59Z"></path></svg>
+          <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z"></path></svg></button>
+        <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-1089"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">Show the source code</div>
+</div>
+</div>
+</div>
+</div>
+
+  <div class="demo-spaced mdc-card"><div class="smui-card__content"><h6 class="mdc-typography--headline6" style="margin: 0;">No icons
+    </h6>
+    <p class="mdc-typography--subtitle2" style="margin: 0 0 10px; color: #888;">Think about your <a href="https://developer.chrome.com/blog/new-in-devtools-83/#vision-deficiencies" target="_blank">color</a>
+      <a href="https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector/Simulation" target="_blank">blind</a> users before you choose this.
+    </p>
+    <div><div><div class="mdc-form-field"><button class="mdc-switch mdc-switch--unselected" type="button" role="switch" aria-checked="false" id="SMUI-form-field-136"><div class="mdc-switch__track"></div>
+  <div class="mdc-switch__handle-track"><div class="mdc-switch__handle"><div class="mdc-switch__shadow"><div class="mdc-elevation-overlay"></div></div>
+      <div class="mdc-switch__ripple"></div>
+      </div></div>
+</button>
+  <label for="SMUI-form-field-136"><span slot="label">Fields of grain.</span></label>
+</div></div>
+
+<pre class="status">Checked: false</pre>
+
+<div style="margin-top: 1em;"><div class="mdc-form-field"><button class="mdc-switch mdc-switch--unselected smui-switch--color-secondary" type="button" role="switch" aria-checked="false" id="SMUI-form-field-137"><div class="mdc-switch__track"></div>
+  <div class="mdc-switch__handle-track"><div class="mdc-switch__handle"><div class="mdc-switch__shadow"><div class="mdc-elevation-overlay"></div></div>
+      <div class="mdc-switch__ripple"></div>
+      </div></div>
+</button>
+  <label for="SMUI-form-field-137"><span slot="label">Fields of grain.</span></label>
+</div></div>
+
+<pre class="status">Checked: false</pre></div>
+</div>
+
+  
+  <div class="mdc-card__actions"><div class="mdc-card__action-icons"><a href="https://github.com/hperrin/svelte-material-ui/blob/master/packages/site/src/routes/demo/switch/_NoIcons.svelte" class="mdc-icon-button mdc-icon-button--display-flex mdc-card__action mdc-card__action--icon" style="" target="_blank"><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+            </svg>
+          </a>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-1090"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">View switch/_NoIcons.svelte on GitHub</div>
+</div>
+        
+      <button class="mdc-icon-button mdc-icon-button--display-flex mdc-card__action mdc-card__action--icon" style="" aria-pressed="false"><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon mdc-icon-button__icon--on" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M6.59,3.41L2,8L6.59,12.6L8,11.18L4.82,8L8,4.82L6.59,3.41M12.41,3.41L11,4.82L14.18,8L11,11.18L12.41,12.6L17,8L12.41,3.41M21.59,11.59L13.5,19.68L9.83,16L8.42,17.41L13.5,22.5L23,13L21.59,11.59Z"></path></svg>
+          <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z"></path></svg></button>
+        <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-1091"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">Show the source code</div>
+</div>
+</div>
+</div>
+</div>
+
+  <div class="demo-spaced mdc-card"><div class="smui-card__content"><h6 class="mdc-typography--headline6" style="margin: 0;">Events</h6>
+    
+    <div><div><div class="mdc-form-field"><button class="mdc-switch mdc-switch--unselected" type="button" role="switch" aria-checked="false" id="SMUI-form-field-138"><div class="mdc-switch__track"></div>
+  <div class="mdc-switch__handle-track"><div class="mdc-switch__handle"><div class="mdc-switch__shadow"><div class="mdc-elevation-overlay"></div></div>
+      <div class="mdc-switch__ripple"></div>
+      <div class="mdc-switch__icons"><svg class="mdc-switch__icon mdc-switch__icon--on" viewBox="0 0 24 24"><path d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z"></path></svg>
+          <svg class="mdc-switch__icon mdc-switch__icon--off" viewBox="0 0 24 24"><path d="M20 13H4v-2h16v2z"></path></svg></div></div></div>
+</button>
+  <label for="SMUI-form-field-138"><span slot="label">Fields of grain.</span></label>
+</div></div>
+
+<div style="margin-top: 1em;"><button class="mdc-button" style=""><div class="mdc-button__ripple"></div>
+  Toggle Programmatically</button>
+  (Notice that this doesn&#39;t fire an event.)
+</div>
+
+<pre class="status">Checked: false, Event: None yet.</pre></div>
+</div>
+
+  
+  <div class="mdc-card__actions"><div class="mdc-card__action-icons"><a href="https://github.com/hperrin/svelte-material-ui/blob/master/packages/site/src/routes/demo/switch/_Events.svelte" class="mdc-icon-button mdc-icon-button--display-flex mdc-card__action mdc-card__action--icon" style="" target="_blank"><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+            </svg>
+          </a>
+          <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-1092"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">View switch/_Events.svelte on GitHub</div>
+</div>
+        
+      <button class="mdc-icon-button mdc-icon-button--display-flex mdc-card__action mdc-card__action--icon" style="" aria-pressed="false"><div class="mdc-icon-button__ripple"></div>
+  <svg class="mdc-icon-button__icon mdc-icon-button__icon--on" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M6.59,3.41L2,8L6.59,12.6L8,11.18L4.82,8L8,4.82L6.59,3.41M12.41,3.41L11,4.82L14.18,8L11,11.18L12.41,12.6L17,8L12.41,3.41M21.59,11.59L13.5,19.68L9.83,16L8.42,17.41L13.5,22.5L23,13L21.59,11.59Z"></path></svg>
+          <svg class="mdc-icon-button__icon" aria-hidden="true" focusable="false" tabindex="-1" viewBox="0 0 24 24"><path fill="currentColor" d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z"></path></svg></button>
+        <div class="mdc-tooltip" style="" role="tooltip" aria-hidden="true" id="SMUI-tooltip-1093"><div class="mdc-tooltip__surface mdc-tooltip__surface-animation" style="">Show the source code</div>
+</div>
+</div>
+</div>
+</div>
+</section></main>
+</div></div>
+
+
+		<script type="module" data-sveltekit-hydrate="1tmey1h">
+		import { set_public_env, start } from "../../_app/immutable/start-7c2fd269.js";
+
+		set_public_env({});
+
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="1tmey1h"]').parentNode,
+			paths: {"base":"","assets":""},
+			route: true,
+			spa: false,
+			trailing_slash: "ignore",
+			hydrate: {
+				status: 200,
+				error: null,
+				node_ids: [0, 39],
+				params: {},
+				routeId: "demo/switch"
+			}
+		});
+	</script>
+	</div>
+  </body>
+</html>
